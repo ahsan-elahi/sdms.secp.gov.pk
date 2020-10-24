@@ -1,0 +1,234 @@
+TD {
+	font-family: Verdana, Tahoma;
+        font-weight: normal;
+        font-size: 11px;
+		color: #FFFFFF;
+}
+.maintext {
+	font-family: Verdana, Tahoma;
+        font-weight: bold;
+        font-size: 10px;
+		color: #4F7813;
+}
+
+.maintext2 {
+	font-family: Verdana, Tahoma;
+        font-weight: bold;
+        font-size: 12px;
+	color: #523C00;
+}
+
+.maintext3 {
+	font-family: Verdana, Tahoma;
+        font-weight: Normal;
+        font-size: 12px;
+	color: #523C00;
+	line-height:18px;
+}
+
+.maintext4 {
+	font-family: Verdana, Tahoma;
+        font-weight: Italic;
+        line-height: 20px;
+        font-size: 14px;
+	color: #523C00;
+}
+
+.maintext5 {
+	font-family: Verdana, Tahoma;
+        font-weight: Bold;
+        line-height: 14px;
+        font-size: 14px;
+	color: #FFFFFF;
+}
+
+.maintext6 {
+	font-family: Verdana, Tahoma;
+        font-weight: Bold;
+        line-height: 13px;
+        font-size: 13px;
+	color: #FFFFFF;
+}
+.maintext7 {
+	font-family: Verdana, Tahoma;
+        font-weight: Bold;
+        font-size: 24px;
+	color: #FFFFFF;
+}
+
+.maintext10 {
+	font-family: Verdana, Tahoma;
+        font-weight: Bold;
+        font-size: 12px;
+	color: #FFFFFF;
+}
+
+.maintext8 {
+	font-family: Verdana, Tahoma;
+        font-weight: normal;
+        line-height: 16px;
+        font-size: 12px;
+	color: #523C00;
+}
+
+
+.date{
+	font-family:Verdana,Tahoma;
+        font-weight: bold;
+        line-height: 17px;
+        font-size: 10px;
+	color: #FFFFFF;
+}
+
+.smReporttitle{
+	font-family:Arial,Verdana,Tahoma;
+        font-weight: bold;
+        font-size: 12px;
+		color: #3399CC;
+}
+.smReporttext{
+	font-family:Arial,Verdana,Tahoma;
+        font-weight: bold;
+        font-size: 14px;
+		color: #3399CC;
+}
+.smReportDateLabel{
+	font-family:Arial,Verdana,Tahoma;
+        font-weight: bold;
+        font-size: 12px;
+		color: #993333;
+}
+.smReportDate{
+	font-family:Arial,Verdana,Tahoma;
+        font-weight: bold;
+        font-size: 14px;
+		color: #993333;
+}
+.simple_link{
+	font-family:Arial,Verdana,Tahoma;
+        font-weight: bold;
+        line-height: 14px;
+        font-size: 14px;
+	color: #ECB900;
+}
+
+.welcome{
+	font-family:Verdana,Tahoma;
+        font-weight: bold;
+        line-height: 12px;
+        font-size: 10px;
+	color: #000000;
+}
+
+.text_orange{
+	font-family: Verdana;
+        font-weight: bold;
+        line-height: 12px;
+        font-size: 12px;
+	color: #FEEEB5;
+}
+
+.copyright{
+	font-family: Verdana;
+        font-weight: normal;
+        line-height: 11px;
+        font-size: 9px;
+	color: #000000;
+}
+
+
+A {
+	COLOR: #EDEDED; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #EDEDED; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #EDEDED; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #FFFFFF; TEXT-DECORATION: underline
+}
+
+.copyright{
+	font-family: Verdana;
+	hont-weight: bold;
+        line-height: 15px;
+        font-size: 11px;
+	color: #000000;
+}
+
+.input1 {
+	BACKGROUND-COLOR: #FFFFFF; BORDER-BOTTOM: #8F0A0F 1px solid; BORDER-LEFT: #8F0A0F 1px solid; BORDER-RIGHT: #8F0A0F 1px solid; BORDER-TOP: #8F0A0F 1px solid; COLOR: #1A3B55; FONT-FAMILY: ms sans serif, verdana, arial, helvetica; FONT-SIZE: 10pt; FONT-WEIGHT: normal
+}
+.input2 {
+	BACKGROUND-COLOR: #FFFFFF; BORDER-BOTTOM: #456177 1px solid; BORDER-LEFT: #456177 1px solid; BORDER-RIGHT: #456177 1px solid; BORDER-TOP: #456177 1px solid; COLOR: #1A3B55; FONT-FAMILY: ms sans serif, verdana, arial, helvetica; FONT-SIZE: 8pt; FONT-WEIGHT: normal
+}
+
+/*style give salman */
+.form-styl{
+    margin-left: 87px;
+	}
+
+.left-form-sty{
+	float:left;
+	}
+.right-form-styl{
+	float: right;
+    margin-right: 5px;
+	}
+
+.label-name{
+	
+	}
+.field{
+    height: 20px;
+    margin-top: 5px;
+    width: 250px;
+	}
+.r-l-styl{
+ 	padding-top: 60px;
+	}
+.footer-contact{
+    color: #333;
+    float: left;
+    font-family: arial;
+    font-size: 13px;
+    height: 43px;
+    margin-top: 10px;
+    width: 265px;
+	}
+.mrg-ato{
+    margin: auto;
+    padding-left: 62px;
+	}
+.line{
+    background: none repeat scroll 0 0 #666;
+    height: 1px;
+    margin-top: 63px;
+    width: 782px;
+	}
+	
+.heading{
+	width:100%;
+	height:auto;
+	float:left;
+	padding:0px;
+	padding:0px;
+	margin-top:20px;
+	
+	}	
+	
+.heading p{
+	padding:0xp;
+	margin:0px;
+	color:#BE1F00;
+	font-weight:bold;
+	
+	}
+
+	
+	
+	
+	
+	

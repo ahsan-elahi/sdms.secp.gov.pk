@@ -1,0 +1,439 @@
+"Log id","Log type","Title","Log","Ip Address","Created","Created"
+"1","Debug","Git installed!","Congratulations Git basic installation completed!","203.215.166.162","2013-06-21 05:46:18","2013-06-21 05:46:18"
+"2","Warning","Tickets deleted","Abdul haseeb (crazenators) just deleted 1 ticket(s)","203.215.166.163","2013-06-22 06:56:22","2013-06-22 06:56:22"
+"3","Warning","Failed staff login attempt (admin)","Username: admin
+IP: 203.215.166.163
+TIME: Jun 22, 2013, 8:09 am CDT
+
+Attempts #2","203.215.166.163","2013-06-22 08:09:25","2013-06-22 08:09:25"
+"4","Warning","Failed staff login attempt (admin)","Username: admin
+IP: 203.215.166.163
+TIME: Jun 22, 2013, 8:09 am CDT
+
+Attempts #4","203.215.166.163","2013-06-22 08:09:51","2013-06-22 08:09:51"
+"5","Warning","Excessive login attempts (crazenator)","Excessive login attempts by a staff member?
+Username: crazenator
+IP: 203.215.166.163
+TIME: Jun 22, 2013, 8:09 am CDT
+
+Attempts #5
+Timeout: 2 minutes 
+
+","203.215.166.163","2013-06-22 08:09:59","2013-06-22 08:09:59"
+"6","Warning","Failed staff login attempt (crazenators)","Username: crazenators
+IP: 203.215.166.163
+TIME: Jun 22, 2013, 8:20 am CDT
+
+Attempts #2","203.215.166.163","2013-06-22 08:20:17","2013-06-22 08:20:17"
+"7","Warning","Invalid CSRF Token __CSRFToken__","Invalid CSRF token [OTRiY2Y2NDZjNzhkYTIzZWI4YmEyZGM0YTVjZGY3YThjYzQ3NjI5Ng==] on http://projects.crazenatorstechnologies.com/ticket/scp/login.php","203.215.166.163","2013-06-24 08:52:56","2013-06-24 08:52:56"
+"153","Error","DB Error #1064","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.163","2013-08-20 05:48:08","2013-08-20 05:48:08"
+"154","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Kurram]
+
+Unknown column 'Kurram' in 'where clause'","203.215.166.163","2013-08-20 06:14:44","2013-08-20 06:14:44"
+"151","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Bajaur]
+
+Unknown column 'Bajaur' in 'where clause'","203.215.166.163","2013-08-20 05:48:06","2013-08-20 05:48:06"
+"152","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Khyber]
+
+Unknown column 'Khyber' in 'where clause'","203.215.166.163","2013-08-20 05:48:08","2013-08-20 05:48:08"
+"149","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Orakzai]
+
+Unknown column 'Orakzai' in 'where clause'","203.215.166.163","2013-08-20 05:48:04","2013-08-20 05:48:04"
+"150","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Mohmand]
+
+Unknown column 'Mohmand' in 'where clause'","203.215.166.163","2013-08-20 05:48:05","2013-08-20 05:48:05"
+"147","Error","DB Error #1064","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-06 07:36:48","2013-08-06 07:36:48"
+"148","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Kurram]
+
+Unknown column 'Kurram' in 'where clause'","203.215.166.163","2013-08-20 05:48:04","2013-08-20 05:48:04"
+"137","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Orakzai]
+
+Unknown column 'Orakzai' in 'where clause'","203.215.166.162","2013-08-06 07:36:13","2013-08-06 07:36:13"
+"138","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Mohmand]
+
+Unknown column 'Mohmand' in 'where clause'","203.215.166.162","2013-08-06 07:36:14","2013-08-06 07:36:14"
+"139","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Bajaur]
+
+Unknown column 'Bajaur' in 'where clause'","203.215.166.162","2013-08-06 07:36:14","2013-08-06 07:36:14"
+"140","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Khyber]
+
+Unknown column 'Khyber' in 'where clause'","203.215.166.162","2013-08-06 07:36:15","2013-08-06 07:36:15"
+"141","Error","DB Error #1064","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-06 07:36:15","2013-08-06 07:36:15"
+"142","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Kurram]
+
+Unknown column 'Kurram' in 'where clause'","203.215.166.162","2013-08-06 07:36:46","2013-08-06 07:36:46"
+"143","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Orakzai]
+
+Unknown column 'Orakzai' in 'where clause'","203.215.166.162","2013-08-06 07:36:46","2013-08-06 07:36:46"
+"144","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Mohmand]
+
+Unknown column 'Mohmand' in 'where clause'","203.215.166.162","2013-08-06 07:36:47","2013-08-06 07:36:47"
+"145","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Bajaur]
+
+Unknown column 'Bajaur' in 'where clause'","203.215.166.162","2013-08-06 07:36:47","2013-08-06 07:36:47"
+"146","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Khyber]
+
+Unknown column 'Khyber' in 'where clause'","203.215.166.162","2013-08-06 07:36:48","2013-08-06 07:36:48"
+"127","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Bajaur]
+
+Unknown column 'Bajaur' in 'where clause'","203.215.166.162","2013-08-06 07:31:28","2013-08-06 07:31:28"
+"128","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Khyber]
+
+Unknown column 'Khyber' in 'where clause'","203.215.166.162","2013-08-06 07:31:29","2013-08-06 07:31:29"
+"129","Error","DB Error #1064","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-06 07:31:29","2013-08-06 07:31:29"
+"130","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Kurram]
+
+Unknown column 'Kurram' in 'where clause'","203.215.166.162","2013-08-06 07:35:14","2013-08-06 07:35:14"
+"131","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Orakzai]
+
+Unknown column 'Orakzai' in 'where clause'","203.215.166.162","2013-08-06 07:35:14","2013-08-06 07:35:14"
+"132","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Mohmand]
+
+Unknown column 'Mohmand' in 'where clause'","203.215.166.162","2013-08-06 07:35:15","2013-08-06 07:35:15"
+"133","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Bajaur]
+
+Unknown column 'Bajaur' in 'where clause'","203.215.166.162","2013-08-06 07:35:15","2013-08-06 07:35:15"
+"134","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Khyber]
+
+Unknown column 'Khyber' in 'where clause'","203.215.166.162","2013-08-06 07:35:16","2013-08-06 07:35:16"
+"135","Error","DB Error #1064","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-06 07:35:17","2013-08-06 07:35:17"
+"136","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Kurram]
+
+Unknown column 'Kurram' in 'where clause'","203.215.166.162","2013-08-06 07:36:13","2013-08-06 07:36:13"
+"125","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Orakzai]
+
+Unknown column 'Orakzai' in 'where clause'","203.215.166.162","2013-08-06 07:31:27","2013-08-06 07:31:27"
+"126","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Mohmand]
+
+Unknown column 'Mohmand' in 'where clause'","203.215.166.162","2013-08-06 07:31:27","2013-08-06 07:31:27"
+"114","Warning","Invalid CSRF Token __CSRFToken__","Invalid CSRF token [] on http://projects.crazenatorstechnologies.com/git/ach/scp/report.php","203.215.166.162","2013-08-05 05:08:56","2013-08-05 05:08:56"
+"115","Warning","Invalid CSRF Token __CSRFToken__","Invalid CSRF token [] on http://projects.crazenatorstechnologies.com/git/ach/scp/report.php","203.215.166.162","2013-08-05 05:10:10","2013-08-05 05:10:10"
+"116","Warning","Invalid CSRF Token __CSRFToken__","Invalid CSRF token [] on http://projects.crazenatorstechnologies.com/git/ach/scp/report.php","203.215.166.162","2013-08-05 05:10:13","2013-08-05 05:10:13"
+"117","Warning","Failed staff login attempt (crazenator)","Username: crazenator
+IP: 203.215.166.163
+TIME: Aug 5, 2013, 5:12 am CDT
+
+Attempts #2","203.215.166.163","2013-08-05 05:12:05","2013-08-05 05:12:05"
+"118","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Kurram]
+
+Unknown column 'Kurram' in 'where clause'","203.215.166.162","2013-08-06 07:28:27","2013-08-06 07:28:27"
+"119","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Orakzai]
+
+Unknown column 'Orakzai' in 'where clause'","203.215.166.162","2013-08-06 07:28:27","2013-08-06 07:28:27"
+"120","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Mohmand]
+
+Unknown column 'Mohmand' in 'where clause'","203.215.166.162","2013-08-06 07:28:28","2013-08-06 07:28:28"
+"121","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Bajaur]
+
+Unknown column 'Bajaur' in 'where clause'","203.215.166.162","2013-08-06 07:28:29","2013-08-06 07:28:29"
+"122","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Khyber]
+
+Unknown column 'Khyber' in 'where clause'","203.215.166.162","2013-08-06 07:28:30","2013-08-06 07:28:30"
+"123","Error","DB Error #1064","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-06 07:28:30","2013-08-06 07:28:30"
+"124","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Kurram]
+
+Unknown column 'Kurram' in 'where clause'","203.215.166.162","2013-08-06 07:31:26","2013-08-06 07:31:26"
+"112","Warning","Invalid CSRF Token __CSRFToken__","Invalid CSRF token [] on http://projects.crazenatorstechnologies.com/git/ach/scp/admin.php?t=ticketaging","203.215.166.162","2013-08-05 04:59:41","2013-08-05 04:59:41"
+"113","Warning","Invalid CSRF Token __CSRFToken__","Invalid CSRF token [] on http://projects.crazenatorstechnologies.com/git/ach/scp/admin.php?t=ticketaging","203.215.166.162","2013-08-05 05:00:00","2013-08-05 05:00:00"
+"106","Error","DB Error #1064","[SELECT * FROM ost_ticket WHERE staff_id <> "0" AND (7 >= TIMESTAMPDIFF(DAY,created,NOW()) AND 1 < TIMESTAMPDIFF(DAY,created,NOW()) AND status = "open"]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-05 03:34:54","2013-08-05 03:34:54"
+"107","Error","DB Error #1064","[SELECT * FROM ost_ticket WHERE staff_id <> "0" AND (30 >= TIMESTAMPDIFF(DAY,created,NOW()) AND 7 < TIMESTAMPDIFF(DAY,created,NOW() AND status = "open"]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-05 03:34:54","2013-08-05 03:34:54"
+"108","Error","DB Error #1064","[SELECT * FROM ost_ticket WHERE staff_id <> "0" AND 365 >= TIMESTAMPDIFF(DAY,created,NOW()) AND 30 < TIMESTAMPDIFF(DAY,created,NOW() AND status = "open"]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-05 03:34:54","2013-08-05 03:34:54"
+"109","Error","DB Error #1064","[SELECT * FROM ost_ticket WHERE staff_id <> "0" AND (7 >= TIMESTAMPDIFF(DAY,created,NOW()) AND 1 < TIMESTAMPDIFF(DAY,created,NOW()) AND status = "open"]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-05 03:37:20","2013-08-05 03:37:20"
+"110","Error","DB Error #1064","[SELECT * FROM ost_ticket WHERE staff_id <> "0" AND (30 >= TIMESTAMPDIFF(DAY,created,NOW()) AND 7 < TIMESTAMPDIFF(DAY,created,NOW()) AND status = "open"]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-05 03:37:21","2013-08-05 03:37:21"
+"111","Error","DB Error #1064","[SELECT * FROM ost_ticket WHERE staff_id <> "0" AND (7 >= TIMESTAMPDIFF(DAY,created,NOW()) AND 1 < TIMESTAMPDIFF(DAY,created,NOW()) AND status = "open"]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-05 03:38:23","2013-08-05 03:38:23"
+"100","Error","DB Error #1064","[SELECT * FROM ost_ticket WHERE staff_id <> "0" AND (30 >= TIMESTAMPDIFF(DAY,created,NOW()) AND status = "open"]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-05 03:22:40","2013-08-05 03:22:40"
+"101","Error","DB Error #1064","[SELECT * FROM ost_ticket WHERE staff_id <> "0" AND (30 >= TIMESTAMPDIFF(DAY,created,NOW()) AND status = "open"]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-05 03:23:54","2013-08-05 03:23:54"
+"102","Error","DB Error #1064","[SELECT * FROM ost_ticket WHERE staff_id <> "0" AND (7 <= TIMESTAMPDIFF(DAY,created,NOW()) AND status = "open"]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-05 03:26:09","2013-08-05 03:26:09"
+"103","Error","DB Error #1064","[SELECT * FROM ost_ticket WHERE staff_id <> "0" AND (30 <= TIMESTAMPDIFF(DAY,created,NOW()) AND status = "open"]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-05 03:26:09","2013-08-05 03:26:09"
+"104","Error","DB Error #1064","[SELECT * FROM ost_ticket WHERE staff_id <> "0" AND (7 >= TIMESTAMPDIFF(DAY,created,NOW()) AND 1 < TIMESTAMPDIFF(DAY,created,NOW()) AND status = "open"]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-05 03:31:44","2013-08-05 03:31:44"
+"105","Error","DB Error #1064","[SELECT * FROM ost_ticket WHERE staff_id <> "0" AND (30 <= TIMESTAMPDIFF(DAY,created,NOW()) AND status = "open"]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-05 03:31:44","2013-08-05 03:31:44"
+"96","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=10 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:42:45","2013-07-26 07:42:45"
+"97","Warning","Invalid CSRF Token __CSRFToken__","Invalid CSRF token [] on http://projects.crazenatorstechnologies.com/git/scp/admin.php?t=ticketaging","203.215.166.162","2013-08-01 02:55:56","2013-08-01 02:55:56"
+"98","Warning","Invalid CSRF Token __CSRFToken__","Invalid CSRF token [] on http://projects.crazenatorstechnologies.com/git/scp/admin.php?t=ticketaging","203.215.166.162","2013-08-01 02:56:03","2013-08-01 02:56:03"
+"99","Warning","Invalid CSRF Token __CSRFToken__","Invalid CSRF token [] on http://projects.crazenatorstechnologies.com/git/scp/admin.php?t=ticketsummary","203.215.166.162","2013-08-05 00:57:37","2013-08-05 00:57:37"
+"93","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=29 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:40:00","2013-07-26 07:40:00"
+"94","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=10 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:40:24","2013-07-26 07:40:24"
+"95","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=10 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:42:24","2013-07-26 07:42:24"
+"92","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=10 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:34:27","2013-07-26 07:34:27"
+"90","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=29 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:32:16","2013-07-26 07:32:16"
+"91","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=29 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:32:16","2013-07-26 07:32:16"
+"87","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=29 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:17:35","2013-07-26 07:17:35"
+"88","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=29 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:17:36","2013-07-26 07:17:36"
+"89","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=9 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:32:12","2013-07-26 07:32:12"
+"85","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=17 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:17:09","2013-07-26 07:17:09"
+"86","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=29 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:17:27","2013-07-26 07:17:27"
+"84","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=19 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:17:07","2013-07-26 07:17:07"
+"62","Warning","Invalid CSRF Token __CSRFToken__","Invalid CSRF token [ODJmNGZlMmIzZjBmY2QyOWE1YTI0ZjFjMTAyNmUwNjliNGU2MTQ0Yw==] on http://projects.crazenatorstechnologies.com/git/scp/login.php","182.185.38.133","2013-07-23 08:21:38","2013-07-23 08:21:38"
+"63","Warning","Failed staff login attempt (CCA1)","Username: CCA1
+IP: 182.185.50.42
+TIME: Jul 23, 2013, 8:55 am CDT
+
+Attempts #2","182.185.50.42","2013-07-23 08:55:29","2013-07-23 08:55:29"
+"64","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=3 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:11:20","2013-07-26 07:11:20"
+"65","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=11 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:11:39","2013-07-26 07:11:39"
+"66","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=29 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:11:44","2013-07-26 07:11:44"
+"67","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=12 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:11:47","2013-07-26 07:11:47"
+"68","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=109139 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:11:54","2013-07-26 07:11:54"
+"69","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=109139 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:11:58","2013-07-26 07:11:58"
+"70","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=29 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:12:04","2013-07-26 07:12:04"
+"71","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=29 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:12:04","2013-07-26 07:12:04"
+"72","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=17 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:12:09","2013-07-26 07:12:09"
+"73","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=17 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:12:10","2013-07-26 07:12:10"
+"74","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=29 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:12:13","2013-07-26 07:12:13"
+"75","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=29 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:12:13","2013-07-26 07:12:13"
+"76","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=29 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:12:17","2013-07-26 07:12:17"
+"77","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=20 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:12:33","2013-07-26 07:12:33"
+"78","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=17 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:12:44","2013-07-26 07:12:44"
+"79","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=20 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:12:58","2013-07-26 07:12:58"
+"80","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=11 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:16:54","2013-07-26 07:16:54"
+"81","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=29 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:16:59","2013-07-26 07:16:59"
+"82","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=19 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:17:03","2013-07-26 07:17:03"
+"83","Error","DB Error #1052","[SELECT  ticket.*, lock_id, dept_id, priority_desc  ,IF(sla.id IS NULL, NULL, DATE_ADD(ticket.created, INTERVAL sla.grace_period HOUR)) as sla_duedate  ,count(attach.attach_id) as attachments  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON (ticket.dept_id=dept.dept_id)  LEFT JOIN ost_sla sla ON (ticket.sla_id=sla.id AND sla.isactive=1)  LEFT JOIN ost_ticket_priority pri ON (ticket.priority_id=pri.priority_id)  LEFT JOIN ost_ticket_lock tlock ON (ticket.ticket_id=tlock.ticket_id AND tlock.expire>NOW())  LEFT JOIN ost_ticket_attachment attach ON (ticket.ticket_id=attach.ticket_id)  WHERE ticket.ticket_id=19 GROUP BY ticket.ticket_id]
+
+Column 'dept_id' in field list is ambiguous","203.215.166.162","2013-07-26 07:17:03","2013-07-26 07:17:03"
+"35","Warning","Failed login attempt (user)","Email: attalafkj@yahoo.com
+Complaint #: 809194
+IP: 203.215.166.163
+TIME: Jul 16, 2013, 3:00 am CDT
+
+Attempts #2","203.215.166.163","2013-07-16 03:00:38","2013-07-16 03:00:38"
+"183","Warning","Failed staff login attempt (admin)","Username: admin
+IP: 203.215.166.162
+TIME: Aug 20, 2013, 8:30 am CDT
+
+Attempts #2","203.215.166.162","2013-08-20 08:30:24","2013-08-20 08:30:24"
+"184","Error","DB Error #1064","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.163","2013-08-20 08:47:22","2013-08-20 08:47:22"
+"185","Error","DB Error #1064","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.163","2013-08-20 08:47:23","2013-08-20 08:47:23"
+"186","Error","DB Error #1064","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.163","2013-08-20 08:47:23","2013-08-20 08:47:23"
+"187","Error","DB Error #1064","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.163","2013-08-20 08:47:24","2013-08-20 08:47:24"
+"188","Warning","Failed staff login attempt (crazenaotr)","Username: crazenaotr
+IP: 203.215.166.163
+TIME: Aug 21, 2013, 2:01 am CDT
+
+Attempts #2","203.215.166.163","2013-08-21 02:01:36","2013-08-21 02:01:36"
+"174","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Khyber]
+
+Unknown column 'Khyber' in 'where clause'","203.215.166.162","2013-08-20 08:12:30","2013-08-20 08:12:30"
+"175","Error","DB Error #1064","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-20 08:12:31","2013-08-20 08:12:31"
+"176","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Kurram]
+
+Unknown column 'Kurram' in 'where clause'","203.215.166.162","2013-08-20 08:16:13","2013-08-20 08:16:13"
+"177","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Orakzai]
+
+Unknown column 'Orakzai' in 'where clause'","203.215.166.162","2013-08-20 08:16:13","2013-08-20 08:16:13"
+"178","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Mohmand]
+
+Unknown column 'Mohmand' in 'where clause'","203.215.166.162","2013-08-20 08:16:15","2013-08-20 08:16:15"
+"179","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Bajaur]
+
+Unknown column 'Bajaur' in 'where clause'","203.215.166.162","2013-08-20 08:16:16","2013-08-20 08:16:16"
+"180","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Khyber]
+
+Unknown column 'Khyber' in 'where clause'","203.215.166.162","2013-08-20 08:16:18","2013-08-20 08:16:18"
+"181","Error","DB Error #1064","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-20 08:16:19","2013-08-20 08:16:19"
+"182","Error","DB Error #1054","[SELECT count(DISTINCT ticket.ticket_id)  FROM ost_ticket ticket  LEFT JOIN ost_department dept ON ticket.dept_id=dept.dept_id    WHERE (   ticket.staff_id=1 OR ticket.dept_id IN (1) ) AND thread.complaint_status='Inquiry in process (if approved)' AND ( 
+                ( ticket.status="open"  )  OR ticket.status="closed"  ) ]
+
+Unknown column 'thread.complaint_status' in 'where clause'","203.215.166.162","2013-08-20 08:26:52","2013-08-20 08:26:52"
+"166","Error","DB Error #1064","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-20 08:11:24","2013-08-20 08:11:24"
+"167","Error","DB Error #1064","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-20 08:11:24","2013-08-20 08:11:24"
+"168","Error","DB Error #1064","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-20 08:11:25","2013-08-20 08:11:25"
+"169","Error","DB Error #1064","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.162","2013-08-20 08:11:25","2013-08-20 08:11:25"
+"170","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Kurram]
+
+Unknown column 'Kurram' in 'where clause'","203.215.166.162","2013-08-20 08:12:27","2013-08-20 08:12:27"
+"171","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Orakzai]
+
+Unknown column 'Orakzai' in 'where clause'","203.215.166.162","2013-08-20 08:12:28","2013-08-20 08:12:28"
+"172","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Mohmand]
+
+Unknown column 'Mohmand' in 'where clause'","203.215.166.162","2013-08-20 08:12:29","2013-08-20 08:12:29"
+"173","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Bajaur]
+
+Unknown column 'Bajaur' in 'where clause'","203.215.166.162","2013-08-20 08:12:30","2013-08-20 08:12:30"
+"155","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Orakzai]
+
+Unknown column 'Orakzai' in 'where clause'","203.215.166.163","2013-08-20 06:14:45","2013-08-20 06:14:45"
+"156","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Mohmand]
+
+Unknown column 'Mohmand' in 'where clause'","203.215.166.163","2013-08-20 06:14:45","2013-08-20 06:14:45"
+"157","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Bajaur]
+
+Unknown column 'Bajaur' in 'where clause'","203.215.166.163","2013-08-20 06:14:46","2013-08-20 06:14:46"
+"158","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Khyber]
+
+Unknown column 'Khyber' in 'where clause'","203.215.166.163","2013-08-20 06:14:47","2013-08-20 06:14:47"
+"159","Error","DB Error #1064","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.163","2013-08-20 06:14:48","2013-08-20 06:14:48"
+"160","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Kurram]
+
+Unknown column 'Kurram' in 'where clause'","203.215.166.163","2013-08-20 06:52:48","2013-08-20 06:52:48"
+"161","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Orakzai]
+
+Unknown column 'Orakzai' in 'where clause'","203.215.166.163","2013-08-20 06:52:49","2013-08-20 06:52:49"
+"162","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Mohmand]
+
+Unknown column 'Mohmand' in 'where clause'","203.215.166.163","2013-08-20 06:52:50","2013-08-20 06:52:50"
+"163","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Bajaur]
+
+Unknown column 'Bajaur' in 'where clause'","203.215.166.163","2013-08-20 06:52:51","2013-08-20 06:52:51"
+"164","Error","DB Error #1054","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=Khyber]
+
+Unknown column 'Khyber' in 'where clause'","203.215.166.163","2013-08-20 06:52:51","2013-08-20 06:52:51"
+"165","Error","DB Error #1064","[SELECT ticketID, ticket_id FROM ost_ticket WHERE location=]
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1","203.215.166.163","2013-08-20 06:52:52","2013-08-20 06:52:52"
+"53","Warning","Failed login attempt (user)","Email: atta@crazenators.com
+Complaint #: 631310
+IP: 203.215.166.162
+TIME: Jul 17, 2013, 6:07 am CDT
+
+Attempts #2","203.215.166.162","2013-07-17 06:07:14","2013-07-17 06:07:14"
+"54","Warning","Failed login attempt (user)","Email: 17
+Complaint #: 505473
+IP: 203.215.166.162
+TIME: Jul 18, 2013, 7:59 am CDT
+
+Attempts #2","203.215.166.162","2013-07-18 07:59:33","2013-07-18 07:59:33"
+"55","Warning","Failed login attempt (user)","Email: 17
+Complaint #: 505473
+IP: 203.215.166.162
+TIME: Jul 18, 2013, 7:59 am CDT
+
+Attempts #4","203.215.166.162","2013-07-18 07:59:48","2013-07-18 07:59:48"
+"56","Warning","Failed login attempt (user)","Email: 17
+Complaint #: 505473
+IP: 203.215.166.162
+TIME: Jul 18, 2013, 8:01 am CDT
+
+Attempts #6","203.215.166.162","2013-07-18 08:01:27","2013-07-18 08:01:27"
+"57","Warning","Invalid CSRF Token __CSRFToken__","Invalid CSRF token [YTQxMWVlNGEzYTFhZThiZDBlNDA2NWI4Nzk4MmMzN2VmZmRlZjIwMg==] on http://projects.crazenatorstechnologies.com/git/scp/login.php","203.215.166.162","2013-07-19 06:06:53","2013-07-19 06:06:53"
+"58","Warning","Invalid CSRF Token __CSRFToken__","Invalid CSRF token [YTQxMWVlNGEzYTFhZThiZDBlNDA2NWI4Nzk4MmMzN2VmZmRlZjIwMg==] on http://projects.crazenatorstechnologies.com/git/scp/login.php","203.215.166.162","2013-07-19 06:06:59","2013-07-19 06:06:59"
+"59","Warning","Invalid CSRF Token __CSRFToken__","Invalid CSRF token [YTQxMWVlNGEzYTFhZThiZDBlNDA2NWI4Nzk4MmMzN2VmZmRlZjIwMg==] on http://projects.crazenatorstechnologies.com/git/scp/login.php","203.215.166.162","2013-07-19 06:07:03","2013-07-19 06:07:03"
+"60","Warning","Invalid CSRF Token __CSRFToken__","Invalid CSRF token [YTQxMWVlNGEzYTFhZThiZDBlNDA2NWI4Nzk4MmMzN2VmZmRlZjIwMg==] on http://projects.crazenatorstechnologies.com/git/scp/login.php","203.215.166.162","2013-07-19 06:07:08","2013-07-19 06:07:08"
+"61","Warning","Failed staff login attempt (agent1)","Username: agent1
+IP: 203.215.166.162
+TIME: Jul 19, 2013, 7:24 am CDT
+
+Attempts #2","203.215.166.162","2013-07-19 07:24:23","2013-07-19 07:24:23"
