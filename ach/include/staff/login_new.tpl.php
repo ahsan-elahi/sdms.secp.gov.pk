@@ -12,8 +12,6 @@ $info = ($_POST && $errors)?Format::htmlchars($_POST):array();
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <![endif]-->
     
-    <title>SECP GRS Complaint System:: SCP</title>
-
     <link rel="icon" type="image/ico" href="favicon.ico"/>
     
     <link href="css/stylesheets.css" rel="stylesheet" type="text/css" />
