@@ -118,9 +118,10 @@ while($i <= 12)
             <thead>
             <tr>
             <td width="32%"><strong>Complaint ID</strong></td>
+            <td><strong>Created Date</strong></td>
             <td><strong>Subject</strong></td>
             <td><strong>Total Reply</strong></td>
-            <td><strong>Average Time</strong></td>            
+            <td><strong>Avg Response Time</strong></td>            
             </tr>
             </thead>
             <tbody>
@@ -155,6 +156,7 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
 ?>
             <tr>
             <td><a href="tickets.php?id=<?php echo $row_get_complaints['ticket_id']; ?>"><?php echo $row_get_complaints['ticket_id'] ;?></a></td>
+            <td><?php echo date('Y-m-d H:i:s',strtotime($row_get_complaints['subject'])); ?></td>
             <td><?php echo $row_get_complaints['subject'] ;?></td>
             <td><?php echo $rowcount; ?></td>
             <?php
