@@ -125,64 +125,51 @@ while($i <= 12)
             </thead>
             <tbody>
             <?php 
+           
+            
+$t_average_years   = 0;
+$t_average_months  = 0;
+$t_average_days    = 0;
+$t_average_hours   = 0;
+$t_average_minuts  = 0; 
+$t_average_seconds = 0;
+
 $sql_get_complaints="SELECT * from  sdms_ticket WHERE 1  ".$dept_add."  ".$from_to_date." ";
 $res_get_complaints = mysql_query($sql_get_complaints);
 while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
+        $diff = 0;
+        $diff_total = 0;
+        $rowcount = 0;
+        $average = 0;
+        $average_years = 0;
+        $average_months = 0;
+        $average_days   = 0;
+        $average_hours  = 0;
+        $average_minuts = 0;
+        $average_seconds= 0;
 
         $sql_ticket_threads = "Select * from sdms_ticket_thread where ticket_id='".$row_get_complaints['ticket_id']."' AND thread_type ='R' order by id asc";
         $res_ticket_threads = mysql_query($sql_ticket_threads);
         $rowcount=mysql_num_rows($res_ticket_threads);
-        $row_ticket_thread = mysql_fetch_array($res_ticket_threads);
 
 ?>
             <tr>
-            <td><?php echo $row_get_complaints['ticket_id'] ;?></td>
+            <td><a href="tickets.php?id=<?php echo $row_get_complaints['ticket_id']; ?>"><?php echo $row_get_complaints['ticket_id'] ;?></a></td>
             <td><?php echo $row_get_complaints['subject'] ;?></td>
             <td><?php echo $rowcount; ?></td>
-            <?php 
-			/*$count=0;
-			$min=0;
-			$max=0;
-			$avg=0;
-			$diff_total=0;
-			$sql_resolve="SELECT * FROM `sdms_ticket` WHERE status='closed' AND dept_id = '".$row_dept['dept_id']."' AND isquery=0";
-			$res_resolve=mysql_query($sql_resolve);
-			while($row_resolve=mysql_fetch_array($res_resolve))
-			{
-			$sql_cal="SELECT * FROM `sdms_ticket` WHERE ticket_id='".$row_resolve['ticket_id']."' ".$from_to_date."";
-			$res_cal=mysql_query($sql_cal);
-			$row_cal=mysql_fetch_array($res_cal);
-			$start_time=$row_cal['created'];
-			$end_time = $row_cal['closed']; 	
-			if($start_time!='' && $end_time!='')
-			{	
-			$count++;			
-					$diff = abs(strtotime($end_time) - strtotime($start_time));
-					//minimum value							
-					if($min==0)
-					{ 
-					$min=$diff; 
-					}
-					else if($min>$diff)
-					{ $min=$diff;	}
-					
-					//maximum value						
-					if($max==0)
-					{ 
-					$max=$diff;
-					}
-					else if($max<$diff)
-					{ 
-					$max=$diff;
-					//echo 	$row_resolve['ticket_id'].'<br>';
-					}
-					//echo '<br>'.$min;
-				$diff_total += $diff; 
-				}
-				
-			}
+            <?php
+             $time_of_customer_request =  $row_get_complaints['created'];
+            while($row_ticket_thread = mysql_fetch_array($res_ticket_threads)){
 
-			$average=floor(($diff_total)/$count);
+                $diff = abs(strtotime($row_ticket_thread['created']) - strtotime($time_of_customer_request));
+                $diff_total += $diff;
+                $time_of_customer_request =  $row_ticket_thread['created'];
+
+            }
+            //Time of first response - time of customer request = (# Minutes/hours/days)
+
+
+			$average=floor(($diff_total)/$rowcount);
 			
 			$average_years   = floor($average / (365*60*60*24)); 				
 			$average_months  = floor(($average - $average_years * 365*60*60*24) / (30*60*60*24)); 
@@ -191,39 +178,12 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
 			$average_minuts  = floor(($average - $average_years * 365*60*60*24 - $average_months*30*60*60*24 - $average_days*60*60*24 - $average_hours*60*60)/ 60); 
 			$average_seconds = floor(($average - $average_years * 365*60*60*24 - $average_months*30*60*60*24 - $average_days*60*60*24 - $average_hours*60*60 - $average_minuts*60));
 			
-			
-			
-			$years   = floor($min / (365*60*60*24)); 				
-			$months  = floor(($min - $years * 365*60*60*24) / (30*60*60*24)); 
-			$days    = floor(($min - $years * 365*60*60*24 - $months*30*60*60*24)/ (60*60*24));
-			$hours   = floor(($min - $years * 365*60*60*24 - $months*30*60*60*24 - $days*60*60*24)/ (60*60)); 
-			$minuts  = floor(($min - $years * 365*60*60*24 - $months*30*60*60*24 - $days*60*60*24 - $hours*60*60)/ 60); 
-			$seconds = floor(($min - $years * 365*60*60*24 - $months*30*60*60*24 - $days*60*60*24 - $hours*60*60 - $minuts*60));
-			
-			$years_max   = floor($max / (365*60*60*24)); 				
-			$months_max  = floor(($max - $years_max * 365*60*60*24) / (30*60*60*24)); 
-			$days_max    = floor(($max - $years_max * 365*60*60*24 - $months_max*30*60*60*24)/ (60*60*24));
-			$hours_max   = floor(($max - $years_max * 365*60*60*24 - $months_max*30*60*60*24 - $days_max*60*60*24)/ (60*60)); 
-			$minuts_max  = floor(($max - $years_max * 365*60*60*24 - $months_max*30*60*60*24 - $days_max*60*60*24 - $hours_max*60*60)/ 60); 
-			$seconds_max = floor(($max - $years_max * 365*60*60*24 - $months_max*30*60*60*24 - $days_max*60*60*24 - $hours_max*60*60 - $minuts_max*60)); */
 			?>   
-            <td><?php //echo $average_years.'Y-'.$average_months.'M-'.$average_days.'D '.$average_hours.'H:'.$average_minuts.'M:'.$average_seconds.'S';?></td>
+            <td><?php echo $average_years.'Y-'.$average_months.'M-'.$average_days.'D '.$average_hours.'H:'.$average_minuts.'M:'.$average_seconds.'S';?></td>
 
             </tr>
          <?php 
-$t_years    += $years;
-$t_months   += $months;
-$t_days     += $days;
-$t_hours    += $hours;
-$t_minuts   += $minuts;
-$t_seconds  += $seconds;
 
-$t_years_max    += $years_max;
-$t_months_max   += $months_max;
-$t_days_max     += $days_max;
-$t_hours_max    += $hours_max;
-$t_minuts_max   += $minuts_max;
-$t_seconds_max  += $seconds_max;
 
 $t_average_years   += $average_years;
 $t_average_months  += $average_months;
