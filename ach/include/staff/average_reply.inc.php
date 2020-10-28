@@ -9,9 +9,6 @@ window.location.reload();
 </script>
 <?php
 if(!defined('OSTSTAFFINC') || !$thisstaff || !$thisstaff->isStaff()) die('Access Denied');
-?>
-<?php 
-if()
 
 if($thisstaff->isFocalPerson() == '1' || $thisstaff->getGroupId()=='8')
 {
@@ -41,7 +38,8 @@ if($_POST['month']!='')
 {
 $current_month = $_POST['month'];
 $from_to_date = ' AND MONTH(created) = "'.$current_month.'" AND YEAR(created) = "2020"  ';
-}else{
+}
+else{
 $current_month = date('m');
 $from_to_date = ' AND MONTH(created) = "'.$current_month.'" AND YEAR(created) = "2020"  ';
 }
