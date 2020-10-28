@@ -338,6 +338,7 @@ $subnav[]=array('desc'=>'Audit Sample Based','href'=>'audit_report.php','iconcla
 
 $subnav[]=array('desc'=>'Geographical View','href'=>'status_summary_report.php','iconclass'=>'departments','title'=>'Audit Sample Based','class'=>'ibw-r_new');
 $subnav[]=array('desc'=>'Average Resolution','href'=>'average_resolution.php','iconclass'=>'departments','title'=>'SDMS','class'=>'ibw-geog_r');
+$subnav[]=array('desc'=>'Average Reply','href'=>'average_reply.php','iconclass'=>'departments','title'=>'SDMS','class'=>'ibw-geog_r');
 	break;   
 				   
             }
