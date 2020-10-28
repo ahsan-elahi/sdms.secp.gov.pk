@@ -128,10 +128,17 @@ while($i <= 12)
 $sql_get_complaints="SELECT * from  sdms_ticket WHERE 1  ".$dept_add."  ".$from_to_date." ";
 $res_get_complaints = mysql_query($sql_get_complaints);
 while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
+
+        $sql_ticket_threads = "Select * from sdms_ticket_thread where ticket_id='".$row_get_complaints['ticket_id']."' AND thread_type ='R' order by id asc";
+        $res_ticket_threads = mysql_query($sql_ticket_threads);
+        $rowcount=mysql_num_rows($res_ticket_threads);
+        $row_ticket_thread = mysql_fetch_array($res_ticket_threads);
+
 ?>
             <tr>
             <td><?php echo $row_get_complaints['ticket_id'] ;?></td>
             <td><?php echo $row_get_complaints['subject'] ;?></td>
+            <td><?php echo $rowcount; ?></td>
             <?php 
 			/*$count=0;
 			$min=0;
@@ -200,8 +207,6 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
 			$minuts_max  = floor(($max - $years_max * 365*60*60*24 - $months_max*30*60*60*24 - $days_max*60*60*24 - $hours_max*60*60)/ 60); 
 			$seconds_max = floor(($max - $years_max * 365*60*60*24 - $months_max*30*60*60*24 - $days_max*60*60*24 - $hours_max*60*60 - $minuts_max*60)); */
 			?>   
-   			<td><?php //echo $years.'Y-'.$months.'M-'.$days.'D '.$hours.'H:'.$minuts.'M:'.$seconds.'S';?></td>
-   			<td><?php //echo $years_max.'Y-'.$months_max.'M-'.$days_max.'D '.$hours_max.'H:'.$minuts_max.'M:'.$seconds_max.'S';?></td>
             <td><?php //echo $average_years.'Y-'.$average_months.'M-'.$average_days.'D '.$average_hours.'H:'.$average_minuts.'M:'.$average_seconds.'S';?></td>
 
             </tr>
