@@ -11,7 +11,8 @@ window.location.reload();
 if(!defined('OSTSTAFFINC') || !$thisstaff || !$thisstaff->isStaff()) die('Access Denied');
 ?>
 <?php 
-$current_month = date('m');
+if()
+
 if($thisstaff->isFocalPerson() == '1' || $thisstaff->getGroupId()=='8')
 {
 	$dept_add .= ' AND dept_id = '.$thisstaff->getDeptId().'';
@@ -38,8 +39,10 @@ elseif($_POST['dept_id']=='')
 }
 if($_POST['month']!='')
 {
-$from_to_date = ' AND MONTH(created) = "'.$_POST['month'].'" AND YEAR(created) = "2020"  ';
+$current_month = $_POST['month'];
+$from_to_date = ' AND MONTH(created) = "'.$current_month.'" AND YEAR(created) = "2020"  ';
 }else{
+$current_month = date('m');
 $from_to_date = ' AND MONTH(created) = "'.$current_month.'" AND YEAR(created) = "2020"  ';
 }
 ?>
@@ -130,6 +133,7 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
 ?>
             <tr>
             <td><?php echo $row_get_complaints['ticket_id'] ;?></td>
+            <td><?php echo $row_get_complaints['subject'] ;?></td>
             <?php 
 			/*$count=0;
 			$min=0;
