@@ -156,7 +156,7 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
 ?>
             <tr>
             <td><a href="tickets.php?id=<?php echo $row_get_complaints['ticket_id']; ?>"><?php echo $row_get_complaints['ticket_id'] ;?></a></td>
-            <td><?php echo date('Y-m-d H:i:s',strtotime($row_get_complaints['subject'])); ?></td>
+            <td><?php echo date('Y-m-d H:i:s',strtotime($row_get_complaints['created'])); ?></td>
             <td><?php echo $row_get_complaints['subject'] ;?></td>
             <td><?php echo $rowcount; ?></td>
             <?php
