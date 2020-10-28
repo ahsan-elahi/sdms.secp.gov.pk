@@ -19,24 +19,24 @@ define('SECRET_SALT','8758214F9FEFA');
 define('ADMIN_EMAIL','a.haseeb@multibizservices.com');
 
 #Mysql Login info
-
+/*
 define('DBTYPE','mysql');
 define('DBHOST','localhost'); 
 define('DBNAME','sdms_scep');
 define('DBUSER','root');
 define('DBPASS','lastfight@secp321$');
-/*
+
 define('DBTYPE','mysql');
 define('DBHOST','localhost'); 
 define('DBNAME','x1w5m6g5_scep');
 define('DBUSER','x1w5m6g5_scep');
 define('DBPASS','{7;N8C)m9wWe');
 */
-/*define('DBTYPE','mysql');
+define('DBTYPE','mysql');
 define('DBHOST','localhost'); 
 define('DBNAME','sdms_scep');
 define('DBUSER','ahsan');
-define('DBPASS','ubuntu');*/
+define('DBPASS','ubuntu');
 
 #Table prefix
 define('TABLE_PREFIX','sdms_');
