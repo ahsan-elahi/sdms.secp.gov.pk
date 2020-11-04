@@ -1029,7 +1029,16 @@ NOT LIKE 'Complaint Assigned to%'";
 $res_checking_activity = mysql_query($sql_checking_activity);
 $num_checking_activity =  mysql_num_rows($res_checking_activity);
 
-if($_REQUEST['action']=='nearoverdue'){
+$num_checking_nearoverdue = 0;
+$sql_checking_nearoverdue ="Select * from sdms_ticket  where ticket_id = '".$row['ticket_id']."' AND TIMESTAMPDIFF(DAY,created,NOW())>=4 AND TIMESTAMPDIFF(DAY,created,NOW())<=10 AND isrejected<>'1' AND ticket_id>=4100 AND ticket_id NOT IN (select ticket_id from sdms_ticket_thread where thread_type='R') ";
+$res_checking_nearoverdue = mysql_query($sql_checking_nearoverdue);
+$num_checking_nearoverdue =  mysql_num_rows($res_checking_nearoverdue);
+if($_REQUEST['ahsan']=='show')
+{
+	echo '<br><br>'.$sql_checking_nearoverdue.'<br><br>'.$num_checking_nearoverdue;
+}
+
+if($_REQUEST['action']=='nearoverdue' || $num_checking_nearoverdue>0){
 $alret='style="background-color: #ff7f7f !important;"';//Assigned Complaint
 }elseif($row['ishandel_reassign']=='1')
 {
