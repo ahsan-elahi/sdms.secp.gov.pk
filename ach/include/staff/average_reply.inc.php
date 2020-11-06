@@ -29,14 +29,18 @@ elseif($thisstaff->isAdmin() && $_POST['dept_id']!='')
 $dept_add .= ' AND dept_id = '.$_POST['dept_id'].'';
 $dept_id = $_POST['dept_id'];
 }
-if($_POST['month']!='')
+if($_POST['from_month']!='' && $_POST['to_month']!='')
 {
-$current_month = $_POST['month'];
-$from_to_date = ' AND MONTH(created) = "'.$current_month.'" AND YEAR(created) = "2020" AND isquery ="0"  ';
+$from_month = $_POST['from_month'];
+$to_month = $_POST['to_month'];
+
+$from_to_date = ' AND MONTH(created) >= "'.$from_month.'" AND MONTH(created) <= "'.$to_month.'" AND YEAR(created) = "2020" AND isquery ="0"  ';
 }
 else{
-$current_month = date('m');
-$from_to_date = ' AND MONTH(created) = "'.$current_month.'" AND YEAR(created) = "2020" AND isquery ="0" ';
+$from_month = date('m');
+$to_month = date('m');
+
+$from_to_date = ' AND MONTH(created) >= "'.$from_month.'" AND MONTH(created) <= "'.$to_month.'" AND YEAR(created) = "2020" AND isquery ="0" ';
 }
 ?>
 
@@ -67,9 +71,9 @@ while($row_dept = mysql_fetch_array($res_get_dept)){
 </select>
 </td>
 <?php }?>
-<th width="20%" style="padding-top:12px;">Month</th>
+<th width="20%" style="padding-top:12px;">From Month</th>
 <td>
-<select name="month" required="required">
+<select name="from_month" required="required">
 <?php 
 $i = 1;
 $date = strtotime('2020-01-01');
@@ -78,7 +82,7 @@ while($i <= 12)
     $month_name = date('F', $date);
     $month_number = date('m', $date);
 
-    if($month_number == $current_month)
+    if($month_number == $from_month)
     $selected = 'selected="selected"';
     else
     $selected = '';
@@ -91,6 +95,29 @@ while($i <= 12)
 </select>
 </td>
 
+<th width="20%" style="padding-top:12px;">To Month</th>
+<td>
+<select name="to_month" required="required">
+<?php 
+$i = 1;
+$date = strtotime('2020-01-01');
+while($i <= 12)
+{
+    $month_name = date('F', $date);
+    $month_number = date('m', $date);
+
+    if($month_number == $to_month)
+    $selected = 'selected="selected"';
+    else
+    $selected = '';
+        
+    echo '<option value="'. $month_number. '" '.$selected.' >'.$month_name.'</option>';
+    $date = strtotime('+1 month', $date);
+    $i++;
+}
+?>
+</select>
+</td>
 
 </tr>        
 <tr>
