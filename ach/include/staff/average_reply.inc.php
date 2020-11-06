@@ -29,11 +29,6 @@ elseif($thisstaff->isAdmin() && $_POST['dept_id']!='')
 $dept_add .= ' AND dept_id = '.$_POST['dept_id'].'';
 $dept_id = $_POST['dept_id'];
 }
-elseif($_POST['dept_id']=='')
-{
-	$dept_add .= ' AND dept_id = 1';
-	$dept_id = '1';
-}
 if($_POST['month']!='')
 {
 $current_month = $_POST['month'];
@@ -61,6 +56,7 @@ $from_to_date = ' AND MONTH(created) = "'.$current_month.'" AND YEAR(created) = 
 <th width="20%" style="padding-top:12px;">By Department</th>
 <td  >
 <select name="dept_id" required="required" >
+    <option value="">--Select Department--</option>
 <?php 
 $sql_get_dept='SELECT * from  sdms_department WHERE 1 ';
 $res_get_dept = mysql_query($sql_get_dept);
@@ -134,6 +130,9 @@ $t_average_days    = 0;
 $t_average_hours   = 0;
 $t_average_minuts  = 0; 
 $t_average_seconds = 0;
+$t_rowcount = 0;
+
+$t_seconds = 0;
 
 $sql_get_complaints="SELECT * from  sdms_ticket WHERE 1  ".$dept_add."  ".$from_to_date." ";
 $res_get_complaints = mysql_query($sql_get_complaints);
@@ -193,18 +192,24 @@ $t_average_days    += $average_days;
 $t_average_hours   += $average_hours;
 $t_average_minuts  += $average_minuts; 
 $t_average_seconds += $average_seconds;
+$t_rowcount += $rowcount;
 
-     } ?>
+     }
+$t_seconds = $t_average_seconds;
+$t_seconds += 86400 * $t_average_days;
+$t_seconds += 60 * $minutes; 
+$t_seconds += 3600 * $hours; 
+
+      ?>
 
             </tbody>
-            <!-- <tfoot>
+            <tfoot>
             <tr>
-            <td width="32%"><strong>TOTAL</strong></td>
-            <td><strong><?php echo $t_years.'Y-'.$t_months.'M-'.$t_days.'D '.$t_hours.'H:'.$t_minuts.'M:'.$t_seconds.'S';?></strong></td>
-            <td><strong><?php echo $t_years_max.'Y-'.$t_months_max.'M-'.$t_days_max.'D '.$t_hours_max.'H:'.$t_minuts_max.'M:'.$t_seconds_max.'S';?></strong></td>
+            <td width="32%" colspan="3"><strong>TOTAL</strong></td>
+            <td width="32%"><?php echo $t_rowcount; ?></td>
             <td><strong><?php echo $t_average_years.'Y-'.$t_average_months.'M-'.$t_average_days.'D '.$t_average_hours.'H:'.$t_average_minuts.'M:'.$t_average_seconds.'S';?></strong></td>            
             </tr>
-            </tfoot> -->
+            </tfoot> 
             
             </table>
             </div>

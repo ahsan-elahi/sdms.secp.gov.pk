@@ -2311,6 +2311,11 @@ while($row_get_child_statuses = db_fetch_array($res_get_child_statuses)){?>
 </select>
 &nbsp;<font class="error"><b>*</b>&nbsp;<?php echo $errors['complaint_status_title']; ?></font></div>       
 </div>
+<div class="row-form clearfix">
+<div class="span3">Auto Reminder:</div>
+<div class="span1"><input type="checkbox" name="isreminder" value="1"></div>
+<div class="span3"><input type="number" name="reminderday" value="" ></div>
+</div>
        
 <div class="footer tar" style="margin-top: 0px;">
 <img src="img/loaders/loader.gif" title="loader.gif" style="display:none;" id="loading_status" >
@@ -2378,6 +2383,11 @@ if($cfg->allowAttachments()) { ?>
 </div>
 </div>   
 <?php }?>
+<div class="row-form clearfix">
+<div class="span3">Auto Reminder:</div>
+<div class="span1"><input type="checkbox" name="isreminder" value="1"></div>
+<div class="span3"><input type="number" name="reminderday" value="" ></div>
+</div>
 <!--<input type="hidden" value="<?php //echo $ticket->complaint_status_title(); ?>" name="complaint_status" >-->
 <?php /*?><div class="row-form clearfix">
 <div class="span3">Complaint Status:</div>

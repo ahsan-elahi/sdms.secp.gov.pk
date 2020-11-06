@@ -575,6 +575,8 @@ if($vars['type']=='R' || $vars['type']=='M' ||  $vars['type']=='N' || $vars['typ
             .' ,staff_id='.db_input($vars['staffId'])
             .' ,poster='.db_input($vars['poster'])
 			.' ,complaint_status='.db_input($default_stauts)
+            .' ,isreminder='.db_input($vars['isreminder'])
+            .' ,reminderday='.db_input($vars['reminderday'])
             .' ,source='.db_input($vars['source']);
         if(isset($vars['pid']))
             $sql.=' ,pid='.db_input($vars['pid']);
@@ -582,7 +584,7 @@ if($vars['type']=='R' || $vars['type']=='M' ||  $vars['type']=='N' || $vars['typ
         if($vars['ip_address'])
             $sql.=' ,ip_address='.db_input($vars['ip_address']);
 
-        //echo $sql;
+        //echo $sql;exit;
         if(!db_query($sql) || !($entry=self::lookup(db_insert_id(), $vars['ticketId'])))
             return false;
 			
@@ -850,6 +852,9 @@ class Response extends ThreadEntry {
 
         $vars['type'] = 'R';
         $vars['body'] = $vars['response'];
+        $vars['isreminder'] = $vars['isreminder'];
+        $vars['reminderday'] = $vars['reminderday'];
+        
         if(!$vars['pid'] && $vars['msgId'])
             $vars['pid'] = $vars['msgId'];
 
