@@ -209,7 +209,7 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
                  
                 
                 $reply_done =  date('Y-m-d',strtotime($row_ticket_thread['created']));
-
+                //Time of first response - time of customer request = (# Minutes/hours/days)
                 $diff = abs(strtotime($reply_done) - strtotime($time_of_customer_request));
                 $diff_total += $diff / (60 * 60 * 24);
                 $time_of_customer_request =  date('Y-m-d',strtotime($row_ticket_thread['created']));
@@ -222,44 +222,16 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
             $average=($diff_total)/$rowcount;
             
             $summary .= $average.'<br>';
-
             ?>
 
             <td><?php echo $summary ;?></td>
-            <td><?php echo $rowcount; ?></td>
-            <?php
-            //Time of first response - time of customer request = (# Minutes/hours/days)
-			?>   
+            <td><?php echo $rowcount; ?></td> 
             <td><?php echo $average.'D ';?></td>
 
             </tr>
          <?php 
 
 
-$t_average_years   += $average_years;
-$t_average_months  += $average_months;
-$t_average_days    += $average_days;
-$t_average_hours   += $average_hours;
-$t_average_minuts  += $average_minuts; 
-$t_average_seconds += $average_seconds;
-$t_rowcount += $rowcount;
-
-     }
-
-$days_to_seconds = 86400 * $t_average_days;
-$hours_to_seconds = 3600 * $t_average_hours;
-$minutes_to_seconds = 60 * $t_average_minuts; 
-
-$all_seconds = $days_to_seconds + $hours_to_seconds+ $minutes_to_seconds + $t_average_seconds; 
-$t_average=floor(($all_seconds)/$t_rowcount);
-//$t_average = date('H:i:s',strtotime($t_average));
-
-$t_years   = floor($t_average / (365*60*60*24));                
-$t_months  = floor(($t_average - $t_years * 365*60*60*24) / (30*60*60*24)); 
-$t_days    = floor(($t_average - $t_years * 365*60*60*24 - $t_months*30*60*60*24)/ (60*60*24));
-$t_hours   = floor(($t_average - $t_years * 365*60*60*24 - $t_months*30*60*60*24 - $t_days*60*60*24)/ (60*60)); 
-$t_minuts  = floor(($t_average - $t_years * 365*60*60*24 - $t_months*30*60*60*24 - $t_days*60*60*24 - $t_hours*60*60)/ 60); 
-$t_seconds = floor(($t_average - $t_years * 365*60*60*24 - $t_months*30*60*60*24 - $t_days*60*60*24 - $t_hours*60*60 - $t_minuts*60));
 
       ?>
 
@@ -270,8 +242,10 @@ $t_seconds = floor(($t_average - $t_years * 365*60*60*24 - $t_months*30*60*60*24
             <td width="32%"><?php echo $t_rowcount; ?></td>
             <td><strong><?php echo $t_years.'Y-'.$t_months.'M-'.$t_days.'D '.$t_hours.'H:'.$t_minuts.'M:'.$t_seconds.'S';?></strong></td>            
             </tr>
-            </tfoot> 
-            
+            </tfoot>
+            <td></td>
+            <td></td>
+            <td></td>
             </table>
             </div>
         </div>                      
