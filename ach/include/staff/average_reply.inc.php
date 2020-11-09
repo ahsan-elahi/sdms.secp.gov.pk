@@ -59,7 +59,7 @@ $from_to_date = ' AND MONTH(created) >= "'.$from_month.'" AND MONTH(created) <= 
 <?php if($thisstaff->isAdmin() || $thisstaff->onChairman() == '1'){ ?>
 <th width="20%" style="padding-top:12px;">By Department</th>
 <td  >
-<select name="dept_id" required="required" >
+<select name="dept_id"  >
     <option value="">--Select Department--</option>
 <?php 
 $sql_get_dept='SELECT * from  sdms_department WHERE 1 ';
@@ -143,6 +143,7 @@ while($i <= 12)
             <td width="32%"><strong>Complaint ID</strong></td>
             <td><strong>Created Date</strong></td>
             <td><strong>Subject</strong></td>
+            <td style="width: 250px;"><strong>Summary</strong></td>
             <td><strong>Total Reply</strong></td>
             <td><strong>Avg Response Time</strong></td>            
             </tr>
@@ -187,6 +188,7 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
         $average_hours  = 0;
         $average_minuts = 0;
         $average_seconds= 0;
+        $summary = '';
 
         $sql_ticket_threads = "Select * from sdms_ticket_thread where ticket_id='".$row_get_complaints['ticket_id']."' AND thread_type ='R' order by id asc";
         $res_ticket_threads = mysql_query($sql_ticket_threads);
@@ -197,30 +199,38 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
             <td><a href="tickets.php?id=<?php echo $row_get_complaints['ticket_id']; ?>"><?php echo $row_get_complaints['ticket_id'] ;?></a></td>
             <td><?php echo date('Y-m-d H:i:s',strtotime($row_get_complaints['created'])); ?></td>
             <td><?php echo $row_get_complaints['subject'] ;?></td>
-            <td><?php echo $rowcount; ?></td>
+            
             <?php
-             $time_of_customer_request =  $row_get_complaints['created'];
-            while($row_ticket_thread = mysql_fetch_array($res_ticket_threads)){
+             $time_of_customer_request =  date('Y-m-d',strtotime($row_get_complaints['created']));
+             $i = 1;
+             $summary .= 'Created: '.$time_of_customer_request.'<br>';
 
-                $diff = abs(strtotime($row_ticket_thread['created']) - strtotime($time_of_customer_request));
-                $diff_total += $diff;
-                $time_of_customer_request =  $row_ticket_thread['created'];
+            while($row_ticket_thread = mysql_fetch_array($res_ticket_threads)){
+                 
+                
+                $reply_done =  date('Y-m-d',strtotime($row_ticket_thread['created']));
+
+                $diff = abs(strtotime($reply_done) - strtotime($time_of_customer_request));
+                $diff_total += $diff / (60 * 60 * 24);
+                $time_of_customer_request =  date('Y-m-d',strtotime($row_ticket_thread['created']));
+                
+                $summary .= 'Reply'.$i.': '.$time_of_customer_request.'<br>';
+                $summary .= $diff / (60 * 60 * 24).'<br>';
+                $i++;
 
             }
+            $average=($diff_total)/$rowcount;
+            
+            $summary .= $average.'<br>';
+
+            ?>
+
+            <td><?php echo $summary ;?></td>
+            <td><?php echo $rowcount; ?></td>
+            <?php
             //Time of first response - time of customer request = (# Minutes/hours/days)
-
-
-			$average=floor(($diff_total)/$rowcount);
-			
-			$average_years   = floor($average / (365*60*60*24)); 				
-			$average_months  = floor(($average - $average_years * 365*60*60*24) / (30*60*60*24)); 
-			$average_days    = floor(($average - $average_years * 365*60*60*24 - $average_months*30*60*60*24)/ (60*60*24));
-			$average_hours   = floor(($average - $average_years * 365*60*60*24 - $average_months*30*60*60*24 - $average_days*60*60*24)/ (60*60)); 
-			$average_minuts  = floor(($average - $average_years * 365*60*60*24 - $average_months*30*60*60*24 - $average_days*60*60*24 - $average_hours*60*60)/ 60); 
-			$average_seconds = floor(($average - $average_years * 365*60*60*24 - $average_months*30*60*60*24 - $average_days*60*60*24 - $average_hours*60*60 - $average_minuts*60));
-			
 			?>   
-            <td><?php echo $average_years.'Y-'.$average_months.'M-'.$average_days.'D '.$average_hours.'H:'.$average_minuts.'M:'.$average_seconds.'S';?></td>
+            <td><?php echo $average.'D ';?></td>
 
             </tr>
          <?php 
@@ -256,7 +266,7 @@ $t_seconds = floor(($t_average - $t_years * 365*60*60*24 - $t_months*30*60*60*24
             </tbody>
             <tfoot>
             <tr>
-            <td width="32%" colspan="3"><strong>TOTAL</strong></td>
+            <td width="32%" colspan="4"><strong>TOTAL</strong></td>
             <td width="32%"><?php echo $t_rowcount; ?></td>
             <td><strong><?php echo $t_years.'Y-'.$t_months.'M-'.$t_days.'D '.$t_hours.'H:'.$t_minuts.'M:'.$t_seconds.'S';?></strong></td>            
             </tr>
