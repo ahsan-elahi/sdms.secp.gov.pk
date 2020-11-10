@@ -177,6 +177,8 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
         $sql_ticket_threads = "Select * from sdms_ticket_thread where ticket_id='".$row_get_complaints['ticket_id']."' AND thread_type ='R' order by id asc";
         $res_ticket_threads = mysql_query($sql_ticket_threads);
         $rowcount=mysql_num_rows($res_ticket_threads);
+        if($rowcount >0)
+        //{
 
 ?>
             <tr>
@@ -204,24 +206,25 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
 
             }
             $average=($diff_total)/$rowcount;
-            $summary .= $average.'<br>';
             ?>
             <td><?php echo $summary ;?></td>
             <td><?php echo $rowcount; ?></td> 
             <td><?php echo $average;?></td>
             </tr>
         <?php 
-$t_rowcount += $rowcount; 
-$t_average += $average;
-$count++;
-    } ?>
+            $t_rowcount += $rowcount; 
+            $t_average += $average;
+            $count++;
+
+    }
+} ?>
     
             </tbody>
             <tfoot>
             <tr>
             <td width="32%" colspan="4"><strong></strong></td>
-            <td width="32%"><b>Average Frequency:</b>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $t_rowcount/$count; ?></td>
-            <td><strong><b>Average Frequency:</b>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $t_average/$count; ?></strong></td>            
+            <td width="32%"><b>Average Frequency:</b>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo floor($t_rowcount)/$count; ?></td>
+            <td><strong><b>Average Frequency:</b>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo floor($t_average)/$count; ?></strong></td>            
             </tr>
             </tfoot>
             </table>
