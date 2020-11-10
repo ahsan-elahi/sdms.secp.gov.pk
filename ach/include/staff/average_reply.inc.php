@@ -218,11 +218,11 @@ $row_dept = mysql_fetch_array($res_dept);
                 $i++;
 
             }
-            $average=floor(($diff_total)/$rowcount);
+            $average= ($diff_total)/$rowcount;
             ?>
             <td><?php echo $summary ;?></td>
             <td><?php echo $rowcount; ?></td> 
-            <td><?php echo $average;?></td>
+            <td><?php echo number_format($average,2);?></td>
             </tr>
         <?php 
             $t_rowcount += $rowcount; 
@@ -239,8 +239,8 @@ $average_time = $t_average/$count;
             <tr>
             <td colspan="5"><strong></strong></td>
             <td colspan="2">
-            <b>Average Frequency:</b>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo floor($average_frequency); ?><br>
-            <b>Average Time:</b>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo floor($average_time); ?></td>          
+            <b>Average Frequency:</b>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo number_format($average_frequency,2); ?><br>
+            <b>Average Time:</b>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo number_format($average_time,2); ?></td>          
             </tr>
             </tfoot>
             </table>
