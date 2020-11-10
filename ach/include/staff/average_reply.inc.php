@@ -42,6 +42,20 @@ $to_month = date('m');
 
 $from_to_date = ' AND MONTH(created) >= "'.$from_month.'" AND MONTH(created) <= "'.$to_month.'" AND YEAR(created) = "2020" AND isquery ="0" ';
 }
+
+function numToOrdinalWord($num)
+{
+    $first_word = array('eth','First','Second','Third','Fouth','Fifth','Sixth','Seventh','Eighth','Ninth','Tenth','Elevents','Twelfth','Thirteenth','Fourteenth','Fifteenth','Sixteenth','Seventeenth','Eighteenth','Nineteenth','Twentieth');
+    $second_word =array('','','Twenty','Thirthy','Forty','Fifty');
+
+    if($num <= 20)
+        return $first_word[$num];
+
+    $first_num = substr($num,-1,1);
+    $second_num = substr($num,-2,1);
+
+    return $string = str_replace('y-eth','ieth',$second_word[$second_num].'-'.$first_word[$first_num]);
+}
 ?>
 
 <div class="page-header"><h1>Complaints <small> Average Reply Time Count</small></h1></div>
@@ -140,11 +154,12 @@ while($i <= 12)
             <table cellpadding="0" cellspacing="0" width="100%" class="table" >							
             <thead>
             <tr>
-            <td width="32%"><strong>Complaint ID</strong></td>
-            <td><strong>Created Date</strong></td>
-            <td><strong>Subject</strong></td>
-            <td style="width: 250px;"><strong>Summary</strong></td>
-            <td><strong>Total Frequency</strong></td>
+            <td width="10%"><strong>Department</strong></td>
+            <td width="5%"><strong>Complaint ID</strong></td>
+            <td width="15%"><strong>Created Date</strong></td>
+            <td width="20%"><strong>Subject</strong></td>
+            <td width="25%"><strong>Summary</strong></td>
+            <td width="10%"><strong>Total Frequency</strong></td>
             <td><strong>Average Time</strong></td>            
             </tr>
             </thead>
@@ -159,6 +174,11 @@ $average_time = 0;
 $sql_get_complaints="SELECT * from  sdms_ticket WHERE 1  ".$dept_add."  ".$from_to_date." ";
 $res_get_complaints = mysql_query($sql_get_complaints);
 while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
+
+    $sql_dept = "Select * from sdms_department where dept_id='".$row_get_complaints['dept_id']."' ";
+$res_dept = mysql_query($sql_dept);
+$row_dept = mysql_fetch_array($res_dept);
+
         $diff = 0;
         $diff_total = 0;
         $rowcount = 0;
@@ -168,11 +188,12 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
         $sql_ticket_threads = "Select * from sdms_ticket_thread where ticket_id='".$row_get_complaints['ticket_id']."' AND thread_type ='R' order by id asc";
         $res_ticket_threads = mysql_query($sql_ticket_threads);
         $rowcount=mysql_num_rows($res_ticket_threads);
-     //   if($rowcount > 0)
-      //  {
+        if($rowcount > 0)
+        {
 
 ?>
             <tr>
+            <td><?php echo $row_dept['dept_name'] ;?></td>
             <td><a href="tickets.php?id=<?php echo $row_get_complaints['ticket_id']; ?>"><?php echo $row_get_complaints['ticket_id'] ;?></a></td>
             <td><?php echo date('Y-m-d H:i:s',strtotime($row_get_complaints['created'])); ?></td>
             <td><?php echo $row_get_complaints['subject'] ;?></td>
@@ -192,13 +213,12 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
                 $diff_total += $diff / (60 * 60 * 24);
                 $time_of_customer_request =  date('Y-m-d',strtotime($row_ticket_thread['created']));
                 
-                $summary .= 'Reply'.$i.': '.$time_of_customer_request.'<br>';
-                $summary .= $diff / (60 * 60 * 24).'<br>';
+                $summary .= numToOrdinalWord($i).' Reply'.': '.$time_of_customer_request.'<br>';
+                $summary .= 'Respons Time: '.$diff / (60 * 60 * 24).'<br><br>';
                 $i++;
 
             }
-            $average=($diff_total)/$rowcount;
-            $summary .= $average.'<br>';
+            $average=floor(($diff_total)/$rowcount);
             ?>
             <td><?php echo $summary ;?></td>
             <td><?php echo $rowcount; ?></td> 
@@ -209,7 +229,7 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
             $t_average += $average;
             $count++;
     }
-//}
+}
 $average_frequency = $t_rowcount/$count;
 $average_time = $t_average/$count;
  ?>
@@ -217,9 +237,10 @@ $average_time = $t_average/$count;
             </tbody>
             <tfoot>
             <tr>
-            <td width="32%" colspan="4"><strong></strong></td>
-            <td width="32%"><b>Average Frequency:</b>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo floor($average_frequency); ?></td>
-            <td><strong><b>Average Time:</b>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo floor($average_time); ?></strong></td>            
+            <td colspan="5"><strong></strong></td>
+            <td colspan="2">
+            <b>Average Frequency:</b>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo floor($average_frequency); ?><br>
+            <b>Average Time:</b>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo floor($average_time); ?></td>          
             </tr>
             </tfoot>
             </table>
