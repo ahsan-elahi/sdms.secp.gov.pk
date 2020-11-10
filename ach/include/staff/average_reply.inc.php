@@ -168,8 +168,8 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
         $sql_ticket_threads = "Select * from sdms_ticket_thread where ticket_id='".$row_get_complaints['ticket_id']."' AND thread_type ='R' order by id asc";
         $res_ticket_threads = mysql_query($sql_ticket_threads);
         $rowcount=mysql_num_rows($res_ticket_threads);
-        if($rowcount > 0)
-        {
+     //   if($rowcount > 0)
+      //  {
 
 ?>
             <tr>
@@ -209,7 +209,7 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
             $t_average += $average;
             $count++;
     }
-}
+//}
 $average_frequency = $t_rowcount/$count;
 $average_time = $t_average/$count;
  ?>
