@@ -150,21 +150,12 @@ while($i <= 12)
             </thead>
             <tbody>
             <?php 
-           
-            
-
-
-$average_time = 0;
-$average_frequency = 0; 
-
-$days_to_seconds = 0;
-$hours_to_seconds = 0;
-$minutes_to_seconds = 0;
-$all_seconds= 0;
-
 $t_rowcount = 0;
 $t_average = 0;
 $count = 0;
+$average_frequency = 0;
+$average_time = 0;
+
 $sql_get_complaints="SELECT * from  sdms_ticket WHERE 1  ".$dept_add."  ".$from_to_date." ";
 $res_get_complaints = mysql_query($sql_get_complaints);
 while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
@@ -177,8 +168,8 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
         $sql_ticket_threads = "Select * from sdms_ticket_thread where ticket_id='".$row_get_complaints['ticket_id']."' AND thread_type ='R' order by id asc";
         $res_ticket_threads = mysql_query($sql_ticket_threads);
         $rowcount=mysql_num_rows($res_ticket_threads);
-        if($rowcount >0)
-        //{
+        if($rowcount > 0)
+        {
 
 ?>
             <tr>
@@ -192,6 +183,7 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
              $summary .= 'Created: '.$time_of_customer_request.'<br>';
 
             while($row_ticket_thread = mysql_fetch_array($res_ticket_threads)){
+
                  
                 
                 $reply_done =  date('Y-m-d',strtotime($row_ticket_thread['created']));
@@ -206,6 +198,7 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
 
             }
             $average=($diff_total)/$rowcount;
+            $summary .= $average.'<br>';
             ?>
             <td><?php echo $summary ;?></td>
             <td><?php echo $rowcount; ?></td> 
@@ -215,16 +208,18 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
             $t_rowcount += $rowcount; 
             $t_average += $average;
             $count++;
-
     }
-} ?>
+}
+$average_frequency = $t_rowcount/$count;
+$average_time = $t_average/$count;
+ ?>
     
             </tbody>
             <tfoot>
             <tr>
             <td width="32%" colspan="4"><strong></strong></td>
-            <td width="32%"><b>Average Frequency:</b>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo floor($t_rowcount)/$count; ?></td>
-            <td><strong><b>Average Frequency:</b>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo floor($t_average)/$count; ?></strong></td>            
+            <td width="32%"><b>Average Frequency:</b>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo floor($average_frequency); ?></td>
+            <td><strong><b>Average Time:</b>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo floor($average_time); ?></strong></td>            
             </tr>
             </tfoot>
             </table>
