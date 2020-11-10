@@ -144,37 +144,27 @@ while($i <= 12)
             <td><strong>Created Date</strong></td>
             <td><strong>Subject</strong></td>
             <td style="width: 250px;"><strong>Summary</strong></td>
-            <td><strong>Total Reply</strong></td>
-            <td><strong>Avg Response Time</strong></td>            
+            <td><strong>Total Frequency</strong></td>
+            <td><strong>Average Time</strong></td>            
             </tr>
             </thead>
             <tbody>
             <?php 
            
             
-$t_average_years   = 0;
-$t_average_months  = 0;
-$t_average_days    = 0;
-$t_average_hours   = 0;
-$t_average_minuts  = 0; 
-$t_average_seconds = 0;
 
 
+$average_time = 0;
+$average_frequency = 0; 
 
 $days_to_seconds = 0;
 $hours_to_seconds = 0;
 $minutes_to_seconds = 0;
 $all_seconds= 0;
 
-$t_years   = 0;
-$t_months  = 0;
-$t_days    = 0;
-$t_hours   = 0;
-$t_minuts  = 0; 
-$t_seconds = 0;
 $t_rowcount = 0;
 $t_average = 0;
-
+$count = 0;
 $sql_get_complaints="SELECT * from  sdms_ticket WHERE 1  ".$dept_add."  ".$from_to_date." ";
 $res_get_complaints = mysql_query($sql_get_complaints);
 while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
@@ -182,12 +172,6 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
         $diff_total = 0;
         $rowcount = 0;
         $average = 0;
-        $average_years = 0;
-        $average_months = 0;
-        $average_days   = 0;
-        $average_hours  = 0;
-        $average_minuts = 0;
-        $average_seconds= 0;
         $summary = '';
 
         $sql_ticket_threads = "Select * from sdms_ticket_thread where ticket_id='".$row_get_complaints['ticket_id']."' AND thread_type ='R' order by id asc";
@@ -220,32 +204,26 @@ while($row_get_complaints = mysql_fetch_array($res_get_complaints)){
 
             }
             $average=($diff_total)/$rowcount;
-            
             $summary .= $average.'<br>';
             ?>
-
             <td><?php echo $summary ;?></td>
             <td><?php echo $rowcount; ?></td> 
-            <td><?php echo $average.'D ';?></td>
-
+            <td><?php echo $average;?></td>
             </tr>
-         <?php 
-
-
-
-      ?>
-
+        <?php 
+$t_rowcount += $rowcount; 
+$t_average += $average;
+$count++;
+    } ?>
+    
             </tbody>
             <tfoot>
             <tr>
-            <td width="32%" colspan="4"><strong>TOTAL</strong></td>
-            <td width="32%"><?php echo $t_rowcount; ?></td>
-            <td><strong><?php echo $t_years.'Y-'.$t_months.'M-'.$t_days.'D '.$t_hours.'H:'.$t_minuts.'M:'.$t_seconds.'S';?></strong></td>            
+            <td width="32%" colspan="4"><strong></strong></td>
+            <td width="32%"><b>Average Frequency:</b>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $t_rowcount/$count; ?></td>
+            <td><strong><b>Average Frequency:</b>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $t_average/$count; ?></strong></td>            
             </tr>
             </tfoot>
-            <td></td>
-            <td></td>
-            <td></td>
             </table>
             </div>
         </div>                      
