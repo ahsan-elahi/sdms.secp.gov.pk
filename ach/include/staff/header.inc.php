@@ -342,7 +342,6 @@ echo sprintf('<div class="alert alert-success"><h4>Success<span style="float:rig
                         </div>
                     </div>
                 </div>	
-
 <!--<a href="#dModal" role="button" class="btn" id="link_to_content" data-toggle="modal">Default</a>             
 <div id="dModal" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" style="top:500px;">
             <div class="modal-header">
