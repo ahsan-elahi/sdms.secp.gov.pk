@@ -10,7 +10,13 @@ window.location.reload();
 <?php
 if(!defined('OSTSTAFFINC') || !$thisstaff || !$thisstaff->isStaff()) die('Access Denied');
 
-if($thisstaff->isFocalPerson() == '1' || $thisstaff->getGroupId()=='8')
+
+if($_POST['dept_id']=='All')
+{
+    $dept_add = '';
+    $dept_id = $_POST['dept_id'];
+}
+elseif($thisstaff->isFocalPerson() == '1' || $thisstaff->getGroupId()=='8')
 {
 	$dept_add .= ' AND dept_id = '.$thisstaff->getDeptId().'';
 	$dept_id = $thisstaff->getDeptId();
@@ -29,18 +35,20 @@ elseif($thisstaff->isAdmin() && $_POST['dept_id']!='')
 $dept_add .= ' AND dept_id = '.$_POST['dept_id'].'';
 $dept_id = $_POST['dept_id'];
 }
-if($_POST['from_month']!='' && $_POST['to_month']!='')
-{
-$from_month = $_POST['from_month'];
-$to_month = $_POST['to_month'];
+else{
+    $_POST['dept_id'] = $thisstaff->getDeptId();
+    $dept_add .= ' AND dept_id = '.$thisstaff->getDeptId().'';
+}
 
-$from_to_date = ' AND MONTH(created) >= "'.$from_month.'" AND MONTH(created) <= "'.$to_month.'" AND YEAR(created) = "2020" AND isquery ="0"  ';
+if($_POST['from_date']!='' && $_POST['to_date']!='')
+{
+$from_to_date = ' AND DATE(created) >= "'.date('Y-m-d',strtotime($_POST['from_date'])).'" AND DATE(created) <= "'.date('Y-m-d',strtotime($_POST['to_date'])).'"  ';
+$date_range = '&startDate='.date('m/d/Y',strtotime($_REQUEST['from_date'])).'&endDate='.date('m/d/Y',strtotime($_REQUEST['to_date']));
+
 }
 else{
-$from_month = date('m');
-$to_month = date('m');
-
-$from_to_date = ' AND MONTH(created) >= "'.$from_month.'" AND MONTH(created) <= "'.$to_month.'" AND YEAR(created) = "2020" AND isquery ="0" ';
+$from_to_date ='';
+$date_range = '';
 }
 
 function numToOrdinalWord($num)
@@ -74,7 +82,7 @@ function numToOrdinalWord($num)
 <th width="20%" style="padding-top:12px;">By Department</th>
 <td  >
 <select name="dept_id"  >
-    <option value="">--Select Department--</option>
+    <option value="All">--Select Department--</option>
 <?php 
 $sql_get_dept='SELECT * from  sdms_department WHERE 1 ';
 $res_get_dept = mysql_query($sql_get_dept);
@@ -85,54 +93,14 @@ while($row_dept = mysql_fetch_array($res_get_dept)){
 </select>
 </td>
 <?php }?>
-<th width="20%" style="padding-top:12px;">From Month</th>
+<th width="20%" style="padding-top:12px;">From Date</th>
 <td>
-<select name="from_month" required="required">
-<?php 
-$i = 1;
-$date = strtotime('2020-01-01');
-while($i <= 12)
-{
-    $month_name = date('F', $date);
-    $month_number = date('m', $date);
-
-    if($month_number == $from_month)
-    $selected = 'selected="selected"';
-    else
-    $selected = '';
-        
-    echo '<option value="'. $month_number. '" '.$selected.' >'.$month_name.'</option>';
-    $date = strtotime('+1 month', $date);
-    $i++;
-}
-?>
-</select>
+<input type="text" name="from_date" id="Datepicker"  value="<?php echo $_POST['from_date']; ?>" >
 </td>
-
-<th width="20%" style="padding-top:12px;">To Month</th>
+<th width="20%" style="padding-top:12px;">To Date</th>
 <td>
-<select name="to_month" required="required">
-<?php 
-$i = 1;
-$date = strtotime('2020-01-01');
-while($i <= 12)
-{
-    $month_name = date('F', $date);
-    $month_number = date('m', $date);
-
-    if($month_number == $to_month)
-    $selected = 'selected="selected"';
-    else
-    $selected = '';
-        
-    echo '<option value="'. $month_number. '" '.$selected.' >'.$month_name.'</option>';
-    $date = strtotime('+1 month', $date);
-    $i++;
-}
-?>
-</select>
+<input type="text" name="to_date" id="Datepicker1"  value="<?php echo $_POST['to_date']; ?>" >
 </td>
-
 </tr>        
 <tr>
 <td style="background-color: #FFFFFF;text-align: right;" colspan="6" align="right">
