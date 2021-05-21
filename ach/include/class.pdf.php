@@ -422,17 +422,14 @@ $this->MultiCell($c, 5, $col2, 0,'L');
         $this->SetTextColor(0);
         $this->cMargin = 3;
 
-        //Table header colors (RGB)
+		//Table header colors (RGB)
         $colors = array('M'=>array(195, 217, 255),
                         'R'=>array(255, 224, 179),
                         'N'=>array(250, 250, 210),
-						'T'=>array(250, 250, 210),
-						'C'=>array(250, 250, 210));
+                        'C'=>array(250, 220, 220),
+                    	'T'=>array(210, 220, 220));
         //Get ticket thread
-			$types = array('M', 'R');
-            $types[] = 'N';
-			$types[] = 'T';
-			$types[] = 'C';
+		$types = array('M', 'R','N','C','T');
 			
 
         if(($entries = $ticket->getThreadEntries($types))) {
@@ -884,10 +881,12 @@ $this->MultiCell($c, 5, $col2, 0,'L');
         //Table header colors (RGB)
         $colors = array('M'=>array(195, 217, 255),
                         'R'=>array(255, 224, 179),
-                        'N'=>array(250, 250, 210));
+                        'N'=>array(250, 250, 210),
+                        'C'=>array(250, 220, 220),
+                    	'T'=>array(210, 220, 220));
         //Get ticket thread
-			$types = array('M', 'R');
-            $types[] = 'N';
+		$types = array('M', 'R','N','C','T');
+  
 
         if(($entries = $ticket->getThreadEntries($types))) {
             foreach($entries as $entry) {

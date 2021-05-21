@@ -158,7 +158,7 @@ $broker_title = "i_broker_title!=''";
             $t_45daysplus = 0;
             $num_total = 0;
             
-            $sql_total = "SELECT * FROM `sdms_ticket` WHERE isquery = '0' AND ticket_id IN(".$row_status['complaint_ids'].") ".$dept_add." ".$from_to_date."";
+            $sql_total = "SELECT * FROM `sdms_ticket` WHERE isquery = '0' AND ticket_id IN(".$row_status['complaint_ids'].") ".$dept_add." ".$from_to_date." ";
             $res_total = mysql_query($sql_total);
             $num_total += mysql_num_rows($res_total);
 			
@@ -182,7 +182,7 @@ $broker_title = "i_broker_title!=''";
             $sql_1to15days = "SELECT * FROM `sdms_ticket` WHERE isquery = '0' AND ticket_id IN(".$row_status['complaint_ids'].") 
             AND DATE(created) <= '".$today_date."'
             AND DATE(created) > '".$days_1to15."'
-            ".$dept_add." ".$from_to_date."";
+            ".$dept_add." ".$from_to_date." ";
             $res_1to15days = mysql_query($sql_1to15days);
             $t_1to15days = mysql_num_rows($res_1to15days);
             
@@ -191,7 +191,7 @@ $broker_title = "i_broker_title!=''";
             $sql_16to30days = "SELECT * FROM `sdms_ticket` WHERE isquery = '0' AND ticket_id IN(".$row_status['complaint_ids'].") 
             AND DATE(created) <= '".$days_1to15."'
             AND DATE(created) > '".$days_15plus."'
-            ".$dept_add." ".$from_to_date."";
+            ".$dept_add." ".$from_to_date." ";
             $res_16to30days = mysql_query($sql_16to30days);
             $t_16to30days = mysql_num_rows($res_16to30days);
             
@@ -201,13 +201,13 @@ $broker_title = "i_broker_title!=''";
             $sql_31to45days = "SELECT * FROM `sdms_ticket` WHERE isquery = '0' AND ticket_id IN(".$row_status['complaint_ids'].") 
             AND DATE(created) <= '".$days_15plus."'
             AND DATE(created) > '".$days_30plus."'
-            ".$dept_add." ".$from_to_date."";
+            ".$dept_add." ".$from_to_date." ";
             $res_31to45days = mysql_query($sql_31to45days);
             $t_31to45days = mysql_num_rows($res_31to45days);
             
             $sql_45daysplus = "SELECT * FROM `sdms_ticket` WHERE isquery = '0' AND ticket_id IN(".$row_status['complaint_ids'].") 
             AND DATE(created) <= '".$days_30plus."'
-            ".$dept_add." ".$from_to_date."";
+            ".$dept_add." ".$from_to_date." ";
             $res_45daysplus = mysql_query($sql_45daysplus);
             $t_45daysplus = mysql_num_rows($res_45daysplus);
 			

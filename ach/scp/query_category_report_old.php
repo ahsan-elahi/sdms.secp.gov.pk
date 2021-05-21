@@ -15,8 +15,7 @@
 **********************************************************************/
 require('staff.inc.php');
 $nav->setTabActive('query_dept_status_report');
-//$page='query_category_report.inc.php';
-$page='nature_of_queries.inc.php';
+$page='query_category_report.inc.php';
 require(STAFFINC_DIR.'header.inc.php');
 require(STAFFINC_DIR.$page);
 include(STAFFINC_DIR.'footer.inc.php');

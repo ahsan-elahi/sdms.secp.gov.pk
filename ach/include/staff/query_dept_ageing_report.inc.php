@@ -302,6 +302,10 @@ fclose($handle);
             plotOptions: {
             series: {
             dataLabels: {
+            padding: 0,
+            style: {
+            fontSize: '8px'
+            },
             enabled: true,
            // format: '{point.name}: {point.y:.1f}'
 			format: '<b>{point.name}</b>: {point.percentage:.1f} %'
